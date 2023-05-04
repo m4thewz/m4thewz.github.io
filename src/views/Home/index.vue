@@ -6,7 +6,7 @@
           <img class="pic" src="@/assets/foto.png"/>
         </div>
         <div>
-          <p>Um autodidata que gosta de fazer sites</p>
+          <p>aaaaaaaa texto</p>
           <hr>
           <ul>
             <li>
