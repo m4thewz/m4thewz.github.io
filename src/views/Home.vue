@@ -1,5 +1,7 @@
 <template>
-  <div class="flex items-center justify-between gap-10 h-full max-h-screen">
+  <div
+    class="flex items-center justify-center md:justify-between gap-10 h-full lg:max-h-screen flex-col-reverse md:flex-row"
+  >
     <div class="flex flex-col justify-center">
       <span class="text-cyan-300 font-bold mb-2">Hi, my name is</span>
       <h1 class="text-7xl font-semibold text-cyan-100 mb-1.5">Matheus Vitor</h1>

@@ -1,12 +1,16 @@
 <template>
   <div class="h-full w-full flex justify-between items-center gap-10">
     <div>
-      <h1 class="mb-8 text-6xl font-semibold text-cyan-100">About</h1>
-      <div class="max-w-2xl">
+      <h1
+        class="text-center lg:text-left mb-8 text-6xl font-semibold text-cyan-100"
+      >
+        About
+      </h1>
+      <div class="md:max-w-2xl text-justify">
         <p class="mb-1.5">
           Hello! My name is Matheus and I like to program some applications. I
-          started learning in the field at the age of 11 when I was interested
-          in creating a website for a Club Penguin project.
+          started learning in the area when i was 11 years old when I was
+          interested in creating a website for a Club Penguin project.
         </p>
         <p>
           I currently acquired knowledge in the area such as
@@ -15,11 +19,14 @@
           My current focus is learning more about game development while
           churning out some project ideas.
         </p>
-        <br />You can see all my knowledges here:
+        <br />
+        <p class="text-center lg:text-left">
+          You can see all my knowledges here:
+        </p>
         <ul
-          :class="`grid-rows-${
+          :class="`justify-between align-center mt-2 w-2/5 grid grid-cols-2 grid-rows-${
             knowledges.length / 2
-          } mt-2 w-2/5 grid grid-cols-2 grid-flow-col list-disc list-inside`"
+          } lg:list-disc list-inside`"
         >
           <li
             class="marker:text-cyan-300 text-sm"
@@ -31,7 +38,7 @@
         </ul>
       </div>
     </div>
-    <div class="w-72 relative" id="pic">
+    <div class="hidden lg:block w-72 relative" id="pic">
       <div
         class="w-full h-auto top-0 left-0 relative z-10 transition-transform ease-in-out duration-300"
       >
