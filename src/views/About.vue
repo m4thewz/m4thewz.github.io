@@ -12,14 +12,13 @@
           started learning in the area when i was 11 years old when I was
           interested in creating a website for a Club Penguin project.
         </p>
-        <p>
+        <p class="mb-1.5">
           I currently acquired knowledge in the area such as
           <span>JavaScript</span>, <span>C</span>, <span>Python</span>,
           <span>HTML</span>, <span>CSS</span>, <span>Vue</span> and other tools.
           My current focus is learning more about game development while
           churning out some project ideas.
         </p>
-        <br />
         <p class="text-center lg:text-left">
           You can see all my knowledges here:
         </p>

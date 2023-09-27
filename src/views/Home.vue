@@ -22,7 +22,7 @@
         to="/about"
         class="py-2.5 text-center rounded-md border font-medium transition duration-300 ease-cubic border-cyan-300 text-cyan-300 hover:text-darkblue hover:bg-cyan-300"
       >
-        See more
+        About me
       </router-link>
     </div>
     <div class="relative" id="pic">
