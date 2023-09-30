@@ -7,29 +7,15 @@ on:
     branches: ["main"]
 
 jobs:
-  deploy:
+  build_vue:
     runs-on: ubuntu-latest
+    name: Build Vue
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12'
-      - name: setup git auth
-        env:
-          email: 'm4theusdev@gmail.com'
-          username: 'm4thewz'
-          access_token: ${{ secrets.TOKEN }}
-        run: |
-          git config --global credential.helper store
-          echo "https://${access_token}:x-oauth-basic@github.com" > ~/.git-credentials
-          git config --global user.email $email
-          git config --global user.name $username
-      - name: deploy to gh-pages
-        run: |
-          npm i
-          NODE_ENV=production npm run build
-          cd dist
-          git init
-          git add -A
-          git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
-          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" main:gh-pages 
+    - uses: actions/checkout@v2
+    - id: Build-Vue
+      uses: xRealNeon/VuePagesAction@1.0.1
+      with:
+        username: 'm4thewz'
+        reponame: 'm4thewz.github.io'
+        token: ${{ secrets.TOKEN }} # Leave this line unchanged
+          
