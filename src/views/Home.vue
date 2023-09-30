@@ -29,7 +29,11 @@
       <div
         class="w-72 h-72 top-0 left-0 relative z-10 transition-transform ease-in-out duration-300"
       >
-        <img class="rounded-lg" src="../assets/foto.png" alt="My pic" />
+        <img
+          class="rounded-lg"
+          src="https://i.imgur.com/Nr17cd3.png"
+          alt="My pic"
+        />
       </div>
       <div
         class="rounded-lg w-72 h-72 top-3 left-3 z-0 absolute border-2 border-cyan-300 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"

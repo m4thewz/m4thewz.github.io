@@ -43,7 +43,7 @@
       >
         <img
           class="w-full rounded-lg"
-          src="../assets/foto2.png"
+          src="https://i.imgur.com/Nr17cd3.png"
           alt="My second pic"
         />
       </div>

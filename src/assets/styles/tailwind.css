@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-darkblue;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-cyan-300;
+  border-radius: 5px;
+}
+body {
+  @apply selection:bg-cyan-500 selection:text-cyan-50;
+}
+img {
+  @apply select-none;
+}
