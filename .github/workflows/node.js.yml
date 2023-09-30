@@ -7,23 +7,29 @@ on:
     branches: ["main"]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    name: Build and Push
     steps:
-      - name: git-checkout
-        uses: actions/checkout@v2
-
-      - name: Install all dependencies
-        run: yarn
-
-      - name: Build
-        run: yarn vue-cli-service build
-
-      - name: Push
-        uses: s0/git-publish-subdir-action@develop
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+      - name: setup git auth
         env:
-          REPO: self
-          BRANCH: gh-pages
-          FOLDER: dist
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          email: 'm4theusdev@gmail.com'
+          username: 'm4thewz'
+          access_token: ${{ secrets.TOKEN }}
+        run: |
+          git config --global credential.helper store
+          echo "https://${access_token}:x-oauth-basic@github.com" > ~/.git-credentials
+          git config --global user.email $email
+          git config --global user.name $username
+      - name: deploy to gh-pages
+        run: |
+          npm i
+          NODE_ENV=production npm run build
+          cd dist
+          git init
+          git add -A
+          git commit -m "🚀 Deploy id ${GITHUB_RUN_ID}"
+          git push -f "https://github.com/${GITHUB_REPOSITORY}.git" main:gh-pages 
