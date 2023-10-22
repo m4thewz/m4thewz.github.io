@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col justify-center gap-5 min-h-full py-28">
-    <p class="text-xl">
+  <div class="flex flex-col justify-center gap-5 sm:min-h-full" id="projects">
+    <p class="text-justify text-md lg:text-xl">
       Você pode ver alguns dos meus projetos aqui, se você tiver interesse em
       ver todos, acesse meu perfil no
       <a
@@ -10,7 +10,7 @@
         >GitHub</a
       >.
     </p>
-    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
       <div
         v-for="(project, index) in projects"
         :key="index"
@@ -40,6 +40,16 @@
     </div>
   </div>
 </template>
+<style>
+#projects {
+  padding-top: calc(var(--nav-height));
+}
+@media (max-width: 640px) {
+  #projects {
+    padding-bottom: 2em;
+  }
+}
+</style>
 <script>
 export default {
   name: "Projects",

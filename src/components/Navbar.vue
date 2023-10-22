@@ -1,13 +1,13 @@
 <template>
   <nav
-    class="bg-darkblue fixed flex items-center justify-between w-screen px-36 py-4 nav-visible transition-all duration-300 ease-cubic"
+    class="bg-darkblue fixed flex items-center justify-between w-screen px-5 sm:px-20 md:px-36 py-4 nav-visible transition-all duration-300 ease-cubic"
   >
-    <img class="w-12" src="@/assets/logo.png" alt="logo" />
+    <img class="w-8 sm:w-12" src="@/assets/logo.png" alt="logo" />
     <ul class="flex gap-5 items-center">
       <li
         v-for="(route, index) in routes"
         :key="index"
-        class="text-xl transition-colors duration-300 hover:text-cyan-300"
+        class="text-lg sm:text-xl transition-colors duration-300 hover:text-cyan-300"
       >
         <router-link :to="route.path">{{ route.name }}</router-link>
       </li>
@@ -15,7 +15,7 @@
   </nav>
 </template>
 <style scoped>
-/* --nav-height: 0px; */
+/* menu depois, responsivo aqui ta horrivel */
 
 .router-link-active {
   @apply text-cyan-300 font-medium;

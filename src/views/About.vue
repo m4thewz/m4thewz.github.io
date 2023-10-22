@@ -1,5 +1,8 @@
 <template>
-  <div class="h-full w-full flex justify-between items-center gap-10">
+  <div
+    class="sm:h-full w-full flex justify-between items-center gap-10"
+    id="about"
+  >
     <div>
       <h1
         class="text-center lg:text-left mb-8 text-6xl font-semibold text-cyan-100"
@@ -21,13 +24,13 @@
           direcionado para o aprimoramento de habilidades em desenvolvimento de
           jogos, enquanto realizo novas ideias de projetos.
         </p>
-        <p class="text-center lg:text-left">
+        <p class="text-left">
           Você pode conferir algumas das minhas habilidades aqui:
         </p>
         <ul
-          :class="`justify-between align-center mt-2 w-2/5 grid grid-cols-2 grid-rows-${
+          :class="`justify-between align-center mt-2 w-full lg:w-2/5 grid grid-cols-2 grid-rows-${
             knowledges.length / 2
-          } lg:list-disc list-inside`"
+          } list-disc list-inside`"
         >
           <li
             class="marker:text-cyan-300 text-sm"
@@ -60,6 +63,12 @@
   </div>
 </template>
 <style scoped>
+@media (max-width: 640px) {
+  #about {
+    padding-top: calc(var(--nav-height));
+    padding-bottom: 2em;
+  }
+}
 span {
   @apply text-cyan-300;
 }

@@ -1,5 +1,7 @@
 <template>
-  <div class="fixed mt-8 flex flex-col items-center gap-5 bottom-0 left-10">
+  <div
+    class="fixed flex flex-col items-center gap-5 bottom-0 left-5 md:left-10"
+  >
     <a href="https://github.com/m4thewz" target="_blank">
       <svg
         xmlns="http://www.w3.org/2000/svg"
