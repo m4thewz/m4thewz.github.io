@@ -14,14 +14,14 @@
       <div
         v-for="(project, index) in projects"
         :key="index"
-        class="border border-cyan-300 rounded-lg shadow"
+        class="flex flex-col border border-cyan-300 rounded-lg shadow"
       >
         <img
           class="rounded-t-lg w-full border-b border-cyan-300"
           :src="imgUrl(project.file)"
           :alt="project.name"
         />
-        <div class="cursor-default p-5">
+        <div class="flex flex-col justify-center h-full cursor-default p-5">
           <h5 class="mb-2 text-2xl font-bold text-cyan-100">
             {{ project.name }}
           </h5>
