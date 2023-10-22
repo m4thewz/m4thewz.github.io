@@ -1,14 +1,14 @@
 <template>
-  <div class="flex flex-col justify-center gap-5 min-h-full py-20">
+  <div class="flex flex-col justify-center gap-5 min-h-full py-28">
     <p class="text-xl">
-      You can see some of my projects here. If you want to see all my projects
-      you can find them on my
+      Você pode ver alguns dos meus projetos aqui, se você tiver interesse em
+      ver todos, acesse meu perfil no
       <a
         class="text-cyan-300 hover:underline hover:decoration-cyan-300"
         href="https://github.com/m4thewz"
         target="_blank"
-        >github</a
-      >
+        >GitHub</a
+      >.
     </p>
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-5">
       <div
@@ -33,7 +33,7 @@
             target="_blank"
             class="block w-full py-2 text-sm text-center font-medium rounded-md bg-cyan-300 text-cyan-950 hover:text-sky-950 hover:bg-sky-400 transition-colors duration-300 ease-cubic"
           >
-            See more
+            Veja mais
           </a>
         </div>
       </div>

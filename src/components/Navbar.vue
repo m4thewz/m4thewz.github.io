@@ -36,8 +36,8 @@ export default {
       .querySelector(":root")
       .style.setProperty(
         "--nav-height",
-        `${document.querySelector("nav").offsetHeight + 10}px`
-      ); //set size of nav in a css var (+10 is because size of boxshadow)
+        `${document.querySelector("nav").offsetHeight + 30}px`
+      );
     window.addEventListener("scroll", function () {
       let nav = document.querySelector("nav");
       if (t.lastScrollY > this.window.scrollY != t.direction) {
@@ -48,10 +48,9 @@ export default {
           nav.classList.remove("nav-visible");
           nav.classList.add("nav-invisible");
         }
-        console.log(this.window.scrollY, nav.offsetHeight);
       }
-      if (this.window.scrollY > nav.offsetHeight)
-        nav.style.boxShadow = "0 10px 30px -10px black";
+      if (this.window.scrollY == 0) nav.style.boxShadow = "none";
+      else nav.style.boxShadow = "0 10px 30px -10px black";
       t.direction = t.lastScrollY > this.window.scrollY;
       t.lastScrollY = this.window.scrollY;
     });
@@ -63,20 +62,20 @@ export default {
       routes: [
         {
           path: "/",
-          name: "Home",
+          name: "Ínicio",
         },
         {
           path: "/about",
-          name: "About",
+          name: "Sobre",
         },
         {
           path: "/projects",
-          name: "Projects",
+          name: "Projetos",
         },
-        {
-          path: "/contact",
-          name: "Contact",
-        },
+        // {
+        //   path: "/contact", futuro curriculo
+        //   name: "Contato",
+        // },
       ],
     };
   },

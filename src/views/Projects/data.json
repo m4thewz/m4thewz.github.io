@@ -1,7 +1,7 @@
 [
   {
-    "name": "Osso Duro",
-    "description": "Simple shooting game, your objective is to survive the ghosts and get a high score.",
+    "name": "Osso-Duro",
+    "description": "Um simples jogo de tiro, seu principal objetivo é sobreviver a ondas de fantasmas e atingir uma maior pontuação.",
     "file": "osso-duro.png",
     "url": "https://github.com/m4thewz/osso-duro"
   }

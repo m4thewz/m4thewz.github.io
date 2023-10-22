@@ -3,26 +3,20 @@
     class="flex items-center justify-center md:justify-between gap-10 h-full lg:max-h-screen flex-col-reverse md:flex-row"
   >
     <div class="flex flex-col justify-center">
-      <span class="text-cyan-300 font-bold mb-2">Hi, my name is</span>
+      <span class="text-cyan-300 font-bold mb-2">Olá, meu nome é</span>
       <h1 class="text-7xl font-semibold text-cyan-100 mb-1.5">Matheus Vitor</h1>
       <h2 class="text-5xl font-semibold text-gray-300 mb-6">
-        I like to code websites and games
+        Eu faço sites e jogos
       </h2>
       <p class="text-lg max-w-3xl mb-6">
-        I am a self-taught programmer with experience in website development.
-        Currently, i'm studying computing in
-        <a
-          href="https://ifsp.edu.br/"
-          class="text-cyan-300 hover:underline hover:decoration-cyan-300"
-          target="_blank"
-          >Instituto Federal</a
-        >.
+        Desenvolvo pequenos sites desde 2020, possuo experiência tanto no
+        Front-end quanto no Back-end trabalhando como freelancer.
       </p>
       <router-link
         to="/about"
         class="py-2.5 text-center rounded-md border font-medium transition duration-300 ease-cubic border-cyan-300 text-cyan-300 hover:text-darkblue hover:bg-cyan-300"
       >
-        About me
+        Sobre mim
       </router-link>
     </div>
     <div class="relative" id="pic">

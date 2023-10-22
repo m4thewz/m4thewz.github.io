@@ -4,23 +4,25 @@
       <h1
         class="text-center lg:text-left mb-8 text-6xl font-semibold text-cyan-100"
       >
-        About
+        Sobre
       </h1>
       <div class="md:max-w-2xl text-justify">
         <p class="mb-1.5">
-          Hello! My name is Matheus and I like to program some applications. I
-          started learning in the area when i was 11 years old when I was
-          interested in creating a website for a Club Penguin project.
+          Olá, meu nome é Matheus, um programador front-end autodidata desde os
+          11 anos. Minha jornada começou com HTML quando desenvolvi um site para
+          um projeto pessoal. A partir daí, expandi meu conhecimento e trabalhei
+          em diversos projetos, incluindo pequenos freelas. Atualmente estou
+          comprometido em criar interfaces de alta qualidade e experiências para
+          as pessoas.
         </p>
         <p class="mb-1.5">
-          I currently acquired knowledge in the area such as
-          <span>JavaScript</span>, <span>C</span>, <span>Python</span>,
-          <span>HTML</span>, <span>CSS</span>, <span>Vue</span> and other tools.
-          My current focus is learning more about game development while
-          churning out some project ideas.
+          Atualmente, adquiri conhecimento em diversas áreas, incluindo
+          ferramentas para a criação de sites e jogos. Meu foco atual está
+          direcionado para o aprimoramento de habilidades em desenvolvimento de
+          jogos, enquanto realizo novas ideias de projetos.
         </p>
         <p class="text-center lg:text-left">
-          You can see all my knowledges here:
+          Você pode conferir algumas das minhas habilidades aqui:
         </p>
         <ul
           :class="`justify-between align-center mt-2 w-2/5 grid grid-cols-2 grid-rows-${
@@ -32,7 +34,11 @@
             v-for="(knowledge, index) in knowledges"
             :key="index"
           >
-            {{ knowledge }}
+            <a
+              href="https://github.com/m4thewz?tab=repositories"
+              target="_blank"
+              >{{ knowledge }}</a
+            >
           </li>
         </ul>
       </div>
@@ -77,7 +83,7 @@ export default {
         "NodeJS",
         "Vue",
         "Python",
-        "C",
+        "SQL",
       ],
     };
   },
