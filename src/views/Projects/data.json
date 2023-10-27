@@ -22,5 +22,11 @@
     "description": "Um bot de discord criado com o intuito de aprender sobre Back-End e banco de dados.",
     "file": "hyouka.jpeg",
     "url": "https://github.com/m4thewz/hyouka"
+  },
+  {
+    "name": "Quiz Maker",
+    "description": "Uma plataforma feita para a realização de questionários. Neste aplicativo você pode criar e explorar questionários locais.",
+    "file": "quiz-maker.png",
+    "url": "https://github.com/m4thewz/quiz-maker"
   }
 ]
