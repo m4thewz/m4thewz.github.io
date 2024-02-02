@@ -24,11 +24,8 @@
           direcionado para o aprimoramento de habilidades em desenvolvimento de
           jogos, enquanto realizo novas ideias de projetos.
         </p>
-        <p class="text-left">
-          Você pode conferir algumas das minhas habilidades aqui:
-        </p>
         <ul
-          :class="`justify-between align-center mt-2 w-full lg:w-2/5 grid grid-cols-2 grid-rows-${
+          :class="`justify-between align-center mt-3 w-full lg:w-2/5 grid grid-cols-2 grid-rows-${
             knowledges.length / 2
           } list-disc list-inside`"
         >

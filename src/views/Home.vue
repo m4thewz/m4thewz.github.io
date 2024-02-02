@@ -11,9 +11,9 @@
         Matheus Vitor
       </h1>
       <h2
-        class="text-2xl md:text-3xl lg:text-5xl font-semibold text-gray-300 mb-6"
+        class="text-xl md:text-2xl lg:text-4xl font-semibold text-gray-300 mb-6"
       >
-        Eu faço sites e jogos
+        Desenvolvedor Web Front-end
       </h2>
       <p class="text-base lg:text-lg max-w-3xl mb-6 text-left sm:text-justify">
         Desenvolvo pequenos sites desde 2020, possuo experiência tanto no

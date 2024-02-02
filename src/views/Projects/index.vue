@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col justify-center gap-5 sm:min-h-full" id="projects">
     <p class="text-justify text-md lg:text-xl">
-      Você pode ver alguns dos meus projetos aqui, se você tiver interesse em
-      ver todos, acesse meu perfil no
+      Você pode ver meus projetos aqui. Caso tenha interesse em ver todos,
+      acesse meu perfil no
       <a
         class="text-cyan-300 hover:underline hover:decoration-cyan-300"
         href="https://github.com/m4thewz"
