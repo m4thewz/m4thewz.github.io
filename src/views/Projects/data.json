@@ -1,5 +1,23 @@
 [
   {
+    "name": "Mensageiros da Colina",
+    "description": "Site feito para o clube de desbravadores Mensageiros da Colina.",
+    "file": "mensageiros.png",
+    "url": "https://mensageirosdacolina.com"
+  },
+  {
+    "name": "Markdown Preview",
+    "description": "Um editor e visualizador de Markdown em tempo real.",
+    "file": "markdown-preview.png",
+    "url": "https://m4thewz.github.io/markdown-preview"
+  },
+  {
+    "name": "Mystery Rooms",
+    "description": "Um jogo que seu objetivo é atravessar salas exterminando monstros.",
+    "file": "dungeon.png",
+    "url": "https://github.com/m4thewz/dungeon"
+  },
+  {
     "name": "Osso-Duro",
     "description": "Um simples jogo de tiro, seu principal objetivo é sobreviver a ondas de fantasmas e atingir uma maior pontuação.",
     "file": "osso-duro.png",
@@ -10,12 +28,6 @@
     "description": "Um sistema de votação local utilizado na semana cultural do Instituto Federal de Jacareí.",
     "file": "semana-cultural.png",
     "url": "https://github.com/m4thewz/semana-cultural"
-  },
-  {
-    "name": "Dracula Icons",
-    "description": "Uma coleção de ícones para linux baseado na paleta de cores Dracula.",
-    "file": "dracula-icons.png",
-    "url": "https://github.com/m4thewz/dracula-icons"
   },
   {
     "name": "Hyouka",

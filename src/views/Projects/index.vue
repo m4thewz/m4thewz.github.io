@@ -10,7 +10,7 @@
         >GitHub</a
       >.
     </p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 pb-3">
       <div
         v-for="(project, index) in projects"
         :key="index"
@@ -21,13 +21,15 @@
           :src="imgUrl(project.file)"
           :alt="project.name"
         />
-        <div class="flex flex-col justify-center h-full cursor-default p-5">
-          <h5 class="mb-2 text-2xl font-bold text-cyan-100">
-            {{ project.name }}
-          </h5>
-          <p class="mb-3 font-light text-cyan-50">
-            {{ project.description }}
-          </p>
+        <div class="flex flex-col justify-between h-full cursor-default p-5">
+          <div>
+            <h5 class="mb-2 text-2xl font-bold text-cyan-100">
+              {{ project.name }}
+            </h5>
+            <p class="mb-3 font-light text-cyan-50">
+              {{ project.description }}
+            </p>
+          </div>
           <a
             :href="project.url"
             target="_blank"
