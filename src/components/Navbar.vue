@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-darkblue fixed flex items-center justify-between w-screen px-5 sm:px-20 md:px-36 py-4 nav-visible transition-all duration-300 ease-cubic"
+    class="bg-darkblue border-b-2 border-darkblue fixed z-20 flex items-center justify-between w-screen px-5 sm:px-20 md:px-36 py-4 nav-visible transition-all duration-300 ease-cubic"
   >
     <img class="w-8 sm:w-12" src="@/assets/logo.png" alt="logo" />
     <ul class="flex gap-5 items-center">
@@ -9,7 +9,9 @@
         :key="index"
         class="text-lg sm:text-xl transition-colors duration-300 hover:text-cyan-300"
       >
-        <router-link :to="route.path">{{ route.name }}</router-link>
+        <router-link :to="route.path" :index="index">{{
+          route.name
+        }}</router-link>
       </li>
     </ul>
   </nav>
@@ -17,7 +19,7 @@
 <style scoped>
 /* menu depois, responsivo aqui ta horrivel */
 
-.router-link-active {
+.router-link-exact-active:not([index="1"]) {
   @apply text-cyan-300 font-medium;
 }
 .nav-visible {
@@ -25,6 +27,11 @@
 }
 .nav-invisible {
   transform: translateY(calc(var(--nav-height) * -1));
+}
+
+.nav-visible-scroll {
+  @apply border-slate-500;
+  box-shadow: 0 10px 30px -10px black;
 }
 </style>
 <script>
@@ -49,8 +56,10 @@ export default {
           nav.classList.add("nav-invisible");
         }
       }
-      if (this.window.scrollY == 0) nav.style.boxShadow = "none";
-      else nav.style.boxShadow = "0 10px 30px -10px black";
+      if (this.window.scrollY == 0) nav.classList.remove("nav-visible-scroll");
+      else {
+        nav.classList.add("nav-visible-scroll");
+      }
       t.direction = t.lastScrollY > this.window.scrollY;
       t.lastScrollY = this.window.scrollY;
     });
@@ -62,10 +71,10 @@ export default {
       routes: [
         {
           path: "/",
-          name: "Ínicio",
+          name: "Início",
         },
         {
-          path: "/about",
+          path: "/#sobre",
           name: "Sobre",
         },
         {
