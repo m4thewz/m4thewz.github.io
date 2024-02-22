@@ -6,16 +6,16 @@
     <div class="flex flex-col justify-center text-center lg:text-left">
       <span class="text-cyan-300 font-bold mb-2 text-2xl">Olá! Meu nome é</span>
       <h1
-        class="text-5xl md:text-6xl lg:text-8xl font-semibold text-cyan-100 mb-1.5"
+        class="text-5xl md:text-6xl lg:text-8xl font-semibold text-cyan-100 mb-3.5"
       >
         Matheus Pacheco
       </h1>
-      <p class="text-xl lg:text-2xl max-w-3xl text-left sm:text-justify">
+      <p class="m-text-xl lg:text-2xl max-w-4xl text-left sm:text-justify">
         <span class="font-semibold text-gray-300">Desenvolvedor Web</span>
         desde 2020, possuo experiência tanto no Front-end quanto no Back-end
         trabalhando como freelancer.
       </p>
-      <p class="my-6 text-lg text-left">
+      <p class="mt-1 mb-2 text-lg text-left">
         🔎 Procurando por oportunidades de Freelance<br />
         💻 Atualmente se especializando em Desenvolvimento Front-end
       </p>
@@ -128,11 +128,7 @@
       <div
         class="w-full h-auto top-0 left-0 relative z-10 transition-transform ease-in-out duration-300"
       >
-        <img
-          class="w-full rounded-lg"
-          src="https://i.imgur.com/Nr17cd3.png"
-          alt="My pic"
-        />
+        <img class="w-full rounded-lg" src="@/assets/pic.png" alt="My pic" />
       </div>
       <div
         class="rounded-lg w-full h-full top-3 left-3 z-0 absolute border-2 border-cyan-300 hover:translate-x-1 hover:translate-y-1 transition-all ease-in-out duration-300"

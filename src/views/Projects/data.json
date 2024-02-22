@@ -3,42 +3,52 @@
     "name": "Mensageiros da Colina",
     "description": "Site feito para o clube de desbravadores Mensageiros da Colina.",
     "file": "mensageiros.png",
-    "url": "https://mensageirosdacolina.com"
+    "url": "https://mensageirosdacolina.com",
+    "technologies": ["Vue.JS", "Sass"]
   },
   {
     "name": "Markdown Preview",
     "description": "Um editor e visualizador de Markdown em tempo real.",
     "file": "markdown-preview.png",
-    "url": "https://m4thewz.github.io/markdown-preview"
+    "url": "https://m4thewz.github.io/markdown-preview",
+    "git": "https://github.com/m4thewz/markdown-preview",
+    "technologies": ["HTML", "CSS", "JavaScript"]
   },
   {
     "name": "Mystery Rooms",
     "description": "Um jogo que seu objetivo é atravessar salas exterminando monstros.",
     "file": "dungeon.png",
-    "url": "https://github.com/m4thewz/dungeon"
+    "git": "https://github.com/m4thewz/dungeon",
+    "technologies": ["Python", "PyGame"]
   },
   {
     "name": "Osso-Duro",
     "description": "Um simples jogo de tiro, seu principal objetivo é sobreviver a ondas de fantasmas e atingir uma maior pontuação.",
     "file": "osso-duro.png",
-    "url": "https://github.com/m4thewz/osso-duro"
+    "git": "https://github.com/m4thewz/osso-duro",
+    "technologies": ["Python", "PyGame"]
   },
   {
     "name": "Semana Cultural",
     "description": "Um sistema de votação local utilizado na semana cultural do Instituto Federal de Jacareí.",
     "file": "semana-cultural.png",
-    "url": "https://github.com/m4thewz/semana-cultural"
+    "git": "https://github.com/m4thewz/semana-cultural",
+    "url": "https://m4thewz.github.io/semana-cultural/",
+    "technologies": ["HTML", "CSS", "JavaScript"]
   },
   {
     "name": "Hyouka",
     "description": "Um bot de discord criado com o intuito de aprender sobre Back-End e banco de dados.",
     "file": "hyouka.jpeg",
-    "url": "https://github.com/m4thewz/hyouka"
+    "git": "https://github.com/m4thewz/hyouka",
+    "url": "https://the-hyouka.glitch.me/",
+    "technologies": ["NodeJS", "Express", "MongoDB", "EJS", "CSS"]
   },
   {
     "name": "Quiz Maker",
     "description": "Uma plataforma feita para a realização de questionários. Neste aplicativo você pode criar e explorar questionários locais.",
     "file": "quiz-maker.png",
-    "url": "https://github.com/m4thewz/quiz-maker"
+    "git": "https://github.com/m4thewz/quiz-maker",
+    "technologies": ["Python", "TKinter"]
   }
 ]
