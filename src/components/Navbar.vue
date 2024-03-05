@@ -2,7 +2,7 @@
   <nav
     class="bg-darkblue border-b-2 border-darkblue fixed z-20 flex items-center justify-between w-screen px-5 sm:px-20 md:px-36 py-4 nav-visible transition-all duration-300 ease-cubic"
   >
-    <img class="w-8 sm:w-12" src="@/assets/logo.png" alt="logo" />
+    <img class="w-8 sm:w-12" src="@/assets/logo.webp" alt="logo" />
     <ul class="flex gap-5 items-center">
       <li
         v-for="(route, index) in routes"

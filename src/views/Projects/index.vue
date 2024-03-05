@@ -20,6 +20,8 @@
         class="flex flex-col border border-cyan-300 rounded-lg shadow"
       >
         <img
+          width="350"
+          height="350"
           class="w-full border-b border-cyan-300"
           style="
             border-top-left-radius: 0.4rem;
