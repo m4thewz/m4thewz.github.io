@@ -1,25 +1,37 @@
 <template>
   <nav
-    class="bg-darkblue border-b-2 border-darkblue fixed z-20 flex items-center justify-between w-screen px-5 sm:px-20 md:px-36 py-4 nav-visible transition-all duration-300 ease-cubic"
+    class="bg-background border-sky-100 border-opacity-10 fixed z-20 w-full flex justify-center nav-visible transition-all duration-300 ease-cubic"
   >
-    <img class="w-8 sm:w-12" src="@/assets/logo.webp" alt="logo" />
-    <ul class="flex gap-5 items-center">
-      <li
-        v-for="(route, index) in routes"
-        :key="index"
-        class="text-lg sm:text-xl transition-colors duration-300 hover:text-cyan-300"
-      >
-        <router-link :to="route.path" :index="index">{{
-          route.name
-        }}</router-link>
-      </li>
-    </ul>
+    <div
+      class="flex items-center justify-between w-full xl:w-2/3 px-5 sm:px-20 md:px-36 py-4"
+    >
+      <router-link to="/">
+        <img
+          width="64"
+          height="64"
+          class="w-8 sm:w-12"
+          src="@/assets/logo.webp"
+          alt="logo"
+        />
+      </router-link>
+      <ul class="flex gap-5 items-center">
+        <li
+          v-for="(route, index) in routes"
+          :key="index"
+          class="text-lg sm:text-xl transition-colors duration-300 hover:text-cyan-300"
+        >
+          <router-link :to="route.path" :index="index">{{
+            route.name
+          }}</router-link>
+        </li>
+      </ul>
+    </div>
   </nav>
 </template>
 <style scoped>
 /* menu depois, responsivo aqui ta horrivel */
 
-.router-link-exact-active:not([index="1"]) {
+.router-link-exact-active {
   @apply text-cyan-300 font-medium;
 }
 .nav-visible {
@@ -30,8 +42,7 @@
 }
 
 .nav-visible-scroll {
-  @apply border-slate-500;
-  box-shadow: 0 10px 30px -10px black;
+  @apply border-b;
 }
 </style>
 <script>
@@ -72,10 +83,6 @@ export default {
         {
           path: "/",
           name: "Início",
-        },
-        {
-          path: "/#sobre",
-          name: "Sobre",
         },
         {
           path: "/projects",

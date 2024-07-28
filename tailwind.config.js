@@ -14,6 +14,9 @@ module.exports = {
           // DEFAULT: "#050f2e",
           DEFAULT: "#081324",
         },
+        background: {
+          DEFAULT: "#0e0e0e",
+        },
       },
       transitionTimingFunction: {
         cubic: "cubic-bezier(0.645, 0.045, 0.355, 1)",
