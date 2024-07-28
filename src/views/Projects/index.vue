@@ -11,7 +11,7 @@
       >.
     </p>
     <div v-for="(section, i) in projects" :key="i" class="last:pb-5">
-      <h2 class="text-sky-300 font-bold text-3xl my-5">
+      <h2 class="text-cyan-100 font-bold text-3xl my-5">
         {{ section.name }}
       </h2>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
@@ -22,7 +22,7 @@
         >
           <div>
             <div class="mb-2 flex justify-between items-center">
-              <h5 class="text-2xl font-bold text-cyan-100">
+              <h5 class="text-2xl font-bold text-sky-300">
                 {{ project.name }}
               </h5>
               <div class="flex gap-3">
