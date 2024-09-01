@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="bg-background border-sky-100 border-opacity-10 fixed z-20 w-full flex justify-center nav-visible transition-all duration-300 ease-cubic"
+    class="bg-background border-b border-transparent fixed z-20 w-full flex justify-center nav-visible transition-all duration-300 ease-cubic"
   >
     <div
       class="flex items-center justify-between w-full xl:w-2/3 px-5 sm:px-20 md:px-36 py-4"
@@ -42,7 +42,7 @@
 }
 
 .nav-visible-scroll {
-  @apply border-b;
+  @apply border-sky-100 border-opacity-10;
 }
 </style>
 <script>
