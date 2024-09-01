@@ -1,8 +1,7 @@
 <template>
   <div class="flex flex-col justify-center sm:min-h-full" id="projects">
     <p class="mt-5 text-justify text-md lg:text-xl">
-      Eu amo criar novos projetos e praticar minhas habilidades, aqui está uma
-      lista de coisas que já fiz. Caso tenha interesse em ver mais, veja meu
+      {{ $t("projects.description") }}
       <a
         class="text-cyan-300 hover:underline hover:decoration-cyan-300"
         href="https://github.com/m4thewz"
@@ -104,7 +103,7 @@ export default {
   name: "Projects",
   data() {
     return {
-      projects: require("./data.json"),
+      projects: require(`./${this.$locale}_data.json`),
     };
   },
 };

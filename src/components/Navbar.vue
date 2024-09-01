@@ -24,6 +24,11 @@
             route.name
           }}</router-link>
         </li>
+        <li>
+          <button @click="$toggleLocale">
+            {{ $locale == "pt" ? "PT" : "EN" }}
+          </button>
+        </li>
       </ul>
     </div>
   </nav>
@@ -82,11 +87,11 @@ export default {
       routes: [
         {
           path: "/",
-          name: "Início",
+          name: this.$t("navbar.home"),
         },
         {
           path: "/projects",
-          name: "Projetos",
+          name: this.$t("navbar.projects"),
         },
         // {
         //   path: "/contact", futuro curriculo

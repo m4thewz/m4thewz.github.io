@@ -1,19 +1,20 @@
 <template>
   <div class="flex flex-col justify-center text-left pt-28 pb-10" id="home">
-    <span class="text-cyan-300 font-bold mb-2 text-2xl">Olá! Meu nome é</span>
+    <span class="text-cyan-300 font-bold mb-2 text-2xl">
+      {{ $t("home.span1") }}
+    </span>
     <h1
       class="text-5xl md:text-6xl lg:text-8xl font-semibold text-cyan-100 mb-3.5"
     >
       Matheus Pacheco
     </h1>
     <p class="text-xl lg:text-2xl max-w-4xl text-left sm:text-justify">
-      <span class="font-semibold text-gray-300">Desenvolvedor Web</span>
-      desde 2020, possuo experiência tanto no Front-end quanto no Back-end
-      trabalhando como freelancer.
+      <span class="font-semibold text-gray-300">{{ $t("home.dev") }}</span>
+      {{ $t("home.bio") }}
     </p>
     <p class="mt-1 mb-2 text-lg text-left">
-      🔎 Procurando por oportunidades de Freelance<br />
-      💻 Atualmente se especializando em Desenvolvimento Front-end
+      🔎 {{ $t("home.searching") }}<br />
+      💻 {{ $t("home.specializing") }}
     </p>
     <div class="flex flex-wrap gap-3 mb-2" id="buttons">
       <a href="https://github.com/m4thewz" target="_blank">
@@ -76,26 +77,19 @@
   </div>
   <div id="sobre" class="pb-10">
     <h2 class="text-left mb-8 text-6xl font-semibold text-cyan-100">
-      Sobre mim
+      {{ $t("home.about") }}
     </h2>
     <div class="text-justify">
       <p class="mb-1.5">
-        Olá! Meu nome é Matheus, sou um programador autodidata desde os 11 anos.
-        Minha jornada começou com HTML quando desenvolvi um site para um projeto
-        pessoal. A partir daí, expandi meu conhecimento e trabalhei em diversos
-        projetos, incluindo pequenos freelas. Atualmente estou comprometido em
-        criar interfaces de alta qualidade e experiências para as pessoas.
+        {{ $t("home.about_p1") }}
       </p>
       <p class="mb-1.5">
-        Atualmente, adquiri conhecimento em diversas áreas, incluindo
-        ferramentas para a criação de sites e jogos. Meu foco atual está
-        direcionado para o aprimoramento de habilidades em desenvolvimento de
-        sites, enquanto realizo novas ideias de projetos.
+        {{ $t("home.about_p2") }}
       </p>
     </div>
     <div>
       <h2 class="text-left my-5 text-3xl font-semibold text-cyan-100">
-        Minhas habilidades
+        {{ $t("home.skills") }}
       </h2>
       <ul class="flex flex-wrap gap-3 w-full">
         <li

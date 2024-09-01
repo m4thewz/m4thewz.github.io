@@ -1,0 +1,85 @@
+[
+  {
+    "name": "Websites",
+    "projects": [
+      {
+        "name": "Mensageiros da Colina",
+        "description": "Website made for the Pathfinders Club \"Mensageiros da Colina\".",
+        "url": "https://mensageirosdacolina.com",
+        "technologies": ["Vue.JS", "Sass"]
+      },
+      {
+        "name": "Cultural week",
+        "description": "A local voting system used in the cultural week of the Federal Institute of Jacareí.",
+        "git": "https://github.com/m4thewz/semana-cultural",
+        "url": "https://m4thewz.github.io/semana-cultural/",
+        "technologies": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "name": "Markdown Preview",
+        "description": "A real-time Markdown editor and viewer.",
+        "url": "https://m4thewz.github.io/markdown-preview",
+        "git": "https://github.com/m4thewz/markdown-preview",
+        "technologies": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "name": "Easy Crypto",
+        "description": "A website that encrypts and decrypts messages.",
+        "url": "https://easy-cryptos.vercel.app/",
+        "github": "https://github.com/m4thewz/easy-crypto",
+        "technologies": ["HTML", "CSS", "JavaScript"]
+      }
+    ]
+  },
+  {
+    "name": "Games",
+    "projects": [
+      {
+        "name": "Mystery Rooms",
+        "description": "A game where your objective is to cross rooms exterminating monsters.",
+        "git": "https://github.com/m4thewz/dungeon",
+        "technologies": ["Python", "PyGame"]
+      },
+      {
+        "name": "Osso-Duro",
+        "description": "A simple shooting game, your main objective is to survive waves of ghosts and achieve a higher score.",
+        "git": "https://github.com/m4thewz/osso-duro",
+        "technologies": ["Python", "PyGame"]
+      }
+    ]
+  },
+  {
+    "name": "Linux",
+    "projects": [
+      {
+        "name": "Dracula Icons",
+        "description": "An icon theme made for Linux based on the Dracula color palette",
+        "url": "https://pling.com/p/1541561",
+        "git": "https://github.com/m4thewz/dracula-icons"
+      },
+      {
+        "name": "Dotfiles",
+        "description": "My personal Arch Linux and AwesomeWM setup",
+        "git": "https://github.com/m4thewz/dotfiles"
+      }
+    ]
+  },
+  {
+    "name": "Others",
+    "projects": [
+      {
+        "name": "Hyouka",
+        "description": "A discord bot created with the aim of learning about Back-End and database.",
+        "git": "https://github.com/m4thewz/hyouka",
+        "url": "https://the-hyouka.glitch.me/",
+        "technologies": ["NodeJS", "Express", "MongoDB", "EJS", "CSS"]
+      },
+      {
+        "name": "Quiz Maker",
+        "description": "A platform made for carrying out questionnaires. In this app you can create and explore local quizzes.",
+        "git": "https://github.com/m4thewz/quiz-maker",
+        "technologies": ["Python", "TKinter"]
+      }
+    ]
+  }
+]

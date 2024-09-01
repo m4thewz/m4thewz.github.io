@@ -1,0 +1,14 @@
+{
+    "navbar.home": "Home",
+    "navbar.projects": "Projects",
+    "home.span1": "Hi! My name is",
+    "home.dev": "Web Developer",
+    "home.bio": "since 2020, I have experience in both Front-end and Back-end working as a freelancer.",
+    "home.searching": "Looking for freelance opportunities",
+    "home.specializing": "Currently specializing in Front-end Development",
+    "home.about": "About me",
+    "home.about_p1": "Hello! My name is Matheus, I've been a self-taught programmer since I was 11 years old. My journey started with HTML when I developed a website for a personal project. From then on, I expanded my knowledge and worked on several projects, including small freelance jobs. I'm currently committed to creating high-quality interfaces and experiences for people.",
+    "home.about_p2": "Currently, I have acquired knowledge in several areas, including tools for creating websites and games. My current focus is on improving website development skills while realizing new project ideas.",
+    "home.skills": "My skills",
+    "projects.description": "I love creating new projects and practicing my skills, here is a list of things I have done. If you're interested in seeing more, check out my"
+}
