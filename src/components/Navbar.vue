@@ -24,9 +24,9 @@
             route.name
           }}</router-link>
         </li>
-        <li>
+        <li class="flex justify-center">
           <button @click="$toggleLocale">
-            {{ $locale == "pt" ? "PT" : "EN" }}
+            <img :src="flag()" alt="flag" class="w-10" />
           </button>
         </li>
       </ul>
@@ -99,6 +99,13 @@ export default {
         // },
       ],
     };
+  },
+  methods: {
+    flag() {
+      return require(`@/assets/locales/${
+        this.$locale == "pt" ? "br" : "en"
+      }_flag.svg`);
+    },
   },
 };
 </script>
