@@ -35,6 +35,12 @@
     "name": "Jogos",
     "projects": [
       {
+        "name": "Tatu Tech",
+        "description": "Neste jogo você é atendente de uma loja de informática, onde vários clientes vêm pedir peças. Acumule pontos combinando as peças em sequência e satisfaça os clientes!",
+        "url": "https://devmathias.itch.io/tatu-tech",
+        "technologies": ["Game Maker", "GML"]
+      },
+      {
         "name": "Mystery Rooms",
         "description": "Um jogo que seu objetivo é atravessar salas exterminando monstros.",
         "git": "https://github.com/m4thewz/dungeon",
